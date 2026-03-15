@@ -4,7 +4,7 @@ An AI-powered chatbot that verifies the credibility of news claims using LLM rea
 
 This project demonstrates how modern AI tools can be integrated into a fact-checking assistant capable of analyzing both text claims and news screenshots.
 
- # 🚀 Features
+ ## 🚀 Features
 
  🤖 Interactive chatbot interface
 
@@ -20,7 +20,7 @@ This project demonstrates how modern AI tools can be integrated into a fact-chec
 
  📈 AI workflow tracing and monitoring
 
- # 📸 Screenshots
+## 📸 Screenshots
 
 ## Chatbot Interface
 
@@ -40,25 +40,7 @@ This project demonstrates how modern AI tools can be integrated into a fact-chec
 
  # 🏗️ System Architecture
 
-User Input (Text / Image)
-│
-▼
-Streamlit Chat Interface
-│
-▼
-FactCheck Agent
-│
-┌──────┼───────────┐
-▼ ▼ ▼
-Web Search RAG Retrieval OCR Extraction
-(Tavily) (Vector DB) (Image Text)
-│
-▼
-Gemini LLM Reasoning
-│
-▼
-Fact Check Verdict
-(True / False / Misleading / Unverified)
+![System Architecture](screenshots/system_architecture.png)
 
 # 🧠 Technologies Used
 
@@ -75,52 +57,9 @@ Fact Check Verdict
 
 # 📂 Project Structure
 
-news-factcheck-ai
-│
-├── frontend
-│ └── app.py
-│
-├── backend
-│ ├── init.py
-│ │
-│ ├── agents
-│ │ ├── init.py
-│ │ └── factcheck_agent.py
-│ │
-│ ├── tools
-│ │ ├── init.py
-│ │ ├── news_search_tool.py
-│ │ ├── rag_tool.py
-│ │ └── ocr_tool.py
-│ │
-│ └── prompts
-│ ├── init.py
-│ └── factcheck_prompt.py
-│
-├── database
-│ ├── init.py
-│ └── vector_store.py
-│
-├── ingestion
-│ ├── init.py
-│ └── ingest_documents.py
-│
-├── data
-│ └── trusted_sources
-│ └── factchecks.txt
-│
-├── utils
-│ └── config.py
-│
-├── screenshots
-│ ├── chatbot_interface.png
-│ ├── factcheck_result.png
-│ ├── ocr_verification.png
-│ └── langsmith_trace.png
-│
-├── requirements.txt
-├── .env.example
-└── README.md
+![Project Structure](screenshots/project_structure.png)
+
+![Project Structure](screenshots/project_structure1.png)
 
 ## Run
 
