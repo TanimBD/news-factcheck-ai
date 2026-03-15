@@ -16,7 +16,7 @@ Verdict: False.
 Explanation: Health organizations including the World Health Organization and CDC warn that drinking bleach is dangerous and has no medical benefit.
 
 Fact Check 4:
-Claim: The Earth is flat.
+Claim: The Earth is flat.  
 Verdict: False.
 Explanation: Scientific evidence from satellite imagery, gravity measurements, and space exploration confirms that Earth is spherical.
 

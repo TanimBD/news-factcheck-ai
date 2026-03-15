@@ -7,11 +7,17 @@ This project demonstrates how modern AI tools can be integrated into a fact-chec
  🚀 Features
 
  🤖 Interactive chatbot interface
+
  🌐 Real-time internet search for latest news
+
  🧠 Retrieval-Augmented Generation (RAG) with vector database
+
  🖼️ OCR-based screenshot fact-checking
+
  🔎 Multi-source evidence analysis
+
  📊 Structured verdict generation
+ 
  📈 AI workflow tracing and monitoring
 
  # 📸 Screenshots
@@ -122,8 +128,11 @@ streamlit run frontend/app.py
 This project integrates LangSmith tracing to monitor:
 
 Agent execution
+
 Tool usage
+
 LLM calls
+
 End-to-end workflow
 
 This helps debug and analyze AI system performance.
@@ -133,9 +142,13 @@ This helps debug and analyze AI system performance.
 This project was developed as part of an AI chatbot final project, demonstrating the integration of:
 
 Large Language Models
+
 Vector databases
+
 Real-time web search
+
 OCR pipelines
+
 AI observability tools
 
 The system helps users verify the authenticity of news claims and detect misinformation.
@@ -143,9 +156,13 @@ The system helps users verify the authenticity of news claims and detect misinfo
 🔮 Future Improvements
 
 Multi-agent fact-checking architecture
+
 News credibility scoring system
+
 Support for PDF and video verification
+
 Advanced misinformation detection pipeline
+
 Improved UI with verdict badges
 
 👨‍💻 Author
@@ -153,5 +170,6 @@ Improved UI with verdict badges
 Developed by Md. Tanim Hossen
 
 AI & Machine Learning Enthusiast
+
 Interested in building intelligent AI systems and LLM applications.
 
