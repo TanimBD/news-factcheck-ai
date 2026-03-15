@@ -1,10 +1,10 @@
-📰 News FactCheck AI Chatbot
+# 📰 News FactCheck AI Chatbot
 
 An AI-powered chatbot that verifies the credibility of news claims using LLM reasoning, real-time web search, Retrieval-Augmented Generation (RAG), and OCR-based screenshot analysis.
 
 This project demonstrates how modern AI tools can be integrated into a fact-checking assistant capable of analyzing both text claims and news screenshots.
 
- 🚀 Features
+ # 🚀 Features
 
  🤖 Interactive chatbot interface
 
@@ -17,7 +17,7 @@ This project demonstrates how modern AI tools can be integrated into a fact-chec
  🔎 Multi-source evidence analysis
 
  📊 Structured verdict generation
- 
+
  📈 AI workflow tracing and monitoring
 
  # 📸 Screenshots
@@ -38,29 +38,29 @@ This project demonstrates how modern AI tools can be integrated into a fact-chec
 
 ![LangSmith Trace](screenshots/langsmith_trace.png)
 
- 🏗️ System Architecture
+ # 🏗️ System Architecture
 
- User Input (Text / Image)
-        │
-        ▼
+User Input (Text / Image)
+│
+▼
 Streamlit Chat Interface
-        │
-        ▼
+│
+▼
 FactCheck Agent
-        │
- ┌──────┼───────────┐
- ▼      ▼           ▼
-Web Search     RAG Retrieval     OCR Extraction
-(Tavily)       (Vector DB)       (Image Text)
-        │
-        ▼
+│
+┌──────┼───────────┐
+▼ ▼ ▼
+Web Search RAG Retrieval OCR Extraction
+(Tavily) (Vector DB) (Image Text)
+│
+▼
 Gemini LLM Reasoning
-        │
-        ▼
+│
+▼
 Fact Check Verdict
 (True / False / Misleading / Unverified)
 
-🧠 Technologies Used
+# 🧠 Technologies Used
 
 | Component       | Technology            |
 | --------------- | --------------------- |
@@ -73,46 +73,53 @@ Fact Check Verdict
 | Embeddings      | Sentence Transformers |
 | Backend         | Python + LangChain    |
 
-📂 Project Structure
+# 📂 Project Structure
 
 news-factcheck-ai
 │
 ├── frontend
-│   └── app.py
+│ └── app.py
 │
 ├── backend
-│   ├── agents
-│   │   └── factcheck_agent.py
-│   │
-│   ├── tools
-│   │   ├── news_search_tool.py
-│   │   ├── rag_tool.py
-│   │   └── ocr_tool.py
-│   │
-│   └── prompts
-│       └── factcheck_prompt.py
+│ ├── init.py
+│ │
+│ ├── agents
+│ │ ├── init.py
+│ │ └── factcheck_agent.py
+│ │
+│ ├── tools
+│ │ ├── init.py
+│ │ ├── news_search_tool.py
+│ │ ├── rag_tool.py
+│ │ └── ocr_tool.py
+│ │
+│ └── prompts
+│ ├── init.py
+│ └── factcheck_prompt.py
 │
 ├── database
-│   └── vector_store.py
+│ ├── init.py
+│ └── vector_store.py
 │
 ├── ingestion
-│   └── ingest_documents.py
+│ ├── init.py
+│ └── ingest_documents.py
 │
 ├── data
-│   └── trusted_sources
-│       └── factchecks.txt
+│ └── trusted_sources
+│ └── factchecks.txt
 │
 ├── utils
-│   └── config.py
+│ └── config.py
 │
 ├── screenshots
-│   ├── chatbot_interface.png
-│   ├── factcheck_result.png
-│   ├── ocr_verification.png
-│   └── langsmith_trace.png
+│ ├── chatbot_interface.png
+│ ├── factcheck_result.png
+│ ├── ocr_verification.png
+│ └── langsmith_trace.png
 │
 ├── requirements.txt
-├── .env
+├── .env.example
 └── README.md
 
 ## Run
@@ -123,7 +130,7 @@ python ingestion/ingest_documents.py
 
 streamlit run frontend/app.py
 
-📊 LangSmith Monitoring
+# 📊 LangSmith Monitoring
 
 This project integrates LangSmith tracing to monitor:
 
@@ -137,7 +144,7 @@ End-to-end workflow
 
 This helps debug and analyze AI system performance.
 
-🎓 Project Purpose
+# 🎓 Project Purpose
 
 This project was developed as part of an AI chatbot final project, demonstrating the integration of:
 
@@ -153,7 +160,7 @@ AI observability tools
 
 The system helps users verify the authenticity of news claims and detect misinformation.
 
-🔮 Future Improvements
+# 🔮 Future Improvements
 
 Multi-agent fact-checking architecture
 
@@ -165,7 +172,7 @@ Advanced misinformation detection pipeline
 
 Improved UI with verdict badges
 
-👨‍💻 Author
+# 👨‍💻 Author
 
 Developed by Md. Tanim Hossen
 
